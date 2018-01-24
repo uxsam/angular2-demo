@@ -6,8 +6,8 @@ import { LandingEditRoutingModule } from './landing.edit-routing.module';
 @NgModule({
   imports: [
     CommonModule,
-    Landing.EditRoutingModule
+    LandingEditRoutingModule
   ],
   declarations: []
 })
-export class Landing.EditModule { }
+export class LandingEditModule { }
