@@ -16,10 +16,10 @@ export class BaseDataService {
 
   }
   characterUrl = './api/characters.json';
-  getConfig() : any {
+  getConfig() : Observable<Character[]>  {
     return this.http.get(this.characterUrl).pipe(
       map((data: any) => {
-        return data.data.map(entry=>entry )
+        return data.data.map(entry=>entry as Character)
       })     
     );
   }
