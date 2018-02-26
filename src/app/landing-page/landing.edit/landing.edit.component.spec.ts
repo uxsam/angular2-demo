@@ -5,7 +5,6 @@ import { LandingEditComponent } from './landing.edit.component';
 describe('LandingEditComponent', () => {
   let component: LandingEditComponent;
   let fixture: ComponentFixture<LandingEditComponent>;
-
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ LandingEditComponent ]
