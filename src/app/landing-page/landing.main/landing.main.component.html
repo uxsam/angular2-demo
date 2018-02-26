@@ -1,6 +1,6 @@
 <p>
   landing.main works!  
 </p>
-<div  *ngFor="let character of characters " >
+<div  *ngFor="let character of characters$ |  async as Character " >
   {{character.id}} {{character.name | uppercase }}
 </div>

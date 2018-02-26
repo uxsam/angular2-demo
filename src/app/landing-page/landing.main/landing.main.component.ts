@@ -9,12 +9,12 @@ import{Character} from '../../model/base-data.service'
   styleUrls: ['./landing.main.component.css']
 })
 export class LandingMainComponent implements OnInit {
-  characters:Character[];
+  characters$: Observable<Character[]> ;
   constructor(private charaterService:BaseDataService) { }
 
   ngOnInit() {
     console.log('i am alive');
     //get the service here and push into the component    
-    this.charaterService.getConfig().subscribe(data => {console.log(data);this.characters=data});
+    this.characters$ =this.charaterService.getConfig();
   }
 }
